@@ -1,13 +1,143 @@
+/* Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile-container {
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.location {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1abc9c;
+  font-size: 1.1rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Button Style */
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #1abc9c;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1abc9c;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
+
 .btn:hover {
-  background: #16a085;
+  background-color: #16a085;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-detail {
+  margin-bottom: 40px;
+}
+
+.project-detail h2 {
+  margin-bottom: 10px;
+}
+
+.project-detail p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-container {
+    padding: 0 20px;
+  }
 }
