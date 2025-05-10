@@ -1,143 +1,112 @@
-/* Reset + Font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+    background-color: #a5d6a7; /* Light off-white/gray/project section */
+    color: #333; /* Dark gray/black for better readability */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #2c3e50;
-  font-weight: 600;
+header {
+    padding: 4rem 2rem;
+    background-color: #a7d1a9; /* A softer, more muted green */
+    color: #fff;
+    text-align: center;
 }
 
-/* Header Section */
-.header {
-  text-align: center;
-  margin-bottom: 50px;
+header img {
+    border: 5px solid #d9ead3; /* Light green border for profile image */
 }
 
-.profile-container {
-  margin-bottom: 20px;
+header h1 {
+    font-weight: 700;
+    color: #191a19;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+header p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #555;
+main.container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-.location {
-  font-size: 1rem;
-  color: #7f8c8d;
+h2 {
+    font-weight: 600;
+    color: #3a8356; /*  green, used as an accent */
+    margin-bottom: 2rem;
 }
 
-.socials {
-  margin-top: 10px;
+a {
+    color: #06090c; /* A standard black for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.socials a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #1abc9c;
-  font-size: 1.1rem;
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
 
-.socials a:hover {
+.project-link {
+    display: inline-block; /* Allows for margin/padding if needed later */
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #153f36; /* Dark background for footer */
+    color: #f8f9fa; /* Light text for footer */
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+/* Navigation Panel (Navbar) */
+.navbar {
+  background-color: #dcedc8; /* Soft green tone */
+  border-bottom: 2px solid #c5e1a5;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #2e7d32; /* Deep green for brand text */
+  font-size: 1.4rem;
+}
+
+.navbar-brand:hover {
+  color: #1b5e20;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #2e7d32;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1b5e20;
   text-decoration: underline;
 }
 
-/* Button Style */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #1abc9c;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+.navbar-toggler {
+  border-color: #81c784;
 }
 
-.btn:hover {
-  background-color: #16a085;
-}
-
-/* Section Styles */
-.section {
-  margin-bottom: 50px;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.project-detail {
-  margin-bottom: 40px;
-}
-
-.project-detail h2 {
-  margin-bottom: 10px;
-}
-
-.project-detail p {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-container {
-    padding: 0 20px;
-  }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%2833, 150, 83, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
